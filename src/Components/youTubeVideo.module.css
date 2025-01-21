@@ -1,0 +1,9 @@
+.videoContainer {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.videoContainer iframe {
+  border: none;
+}

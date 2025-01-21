@@ -1,0 +1,9 @@
+.movieCard {
+  list-style: none;
+  font-size: 1rem;
+  color: white;
+}
+
+.posterMovie {
+  border-radius: 15px;
+}

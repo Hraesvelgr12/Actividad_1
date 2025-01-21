@@ -1,0 +1,33 @@
+.movieCard {
+  list-style: none;
+  font-size: 1rem;
+  color: white;
+  position: relative; /* Necesario para posicionar la mini ventana */
+}
+
+.posterMovie {
+  border-radius: 15px; /* Bordes redondeados para el póster */
+  transition: transform 0.2s; /* Efecto de elevación */
+}
+.posterMovie__title {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.movieCard:hover .posterMovie {
+  transform: scale(1.05); /* Efecto de elevación al pasar el mouse */
+}
+
+.info-popup {
+  display: block; /* Muestra la mini ventana */
+  position: absolute; /* Posiciona la mini ventana sobre el póster */
+  bottom: 10%; /* Coloca la mini ventana encima del póster */
+  left: 50%; /* Centra la mini ventana horizontalmente */
+  transform: translateX(-50%); /* Ajusta la posición para centrar */
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con opacidad */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 10px; /* Espaciado interno */
+  width: 230px; /* Ancho de la mini ventana */
+  z-index: 10; /* Asegura que esté por encima de otros elementos */
+  color: white; /* Color del texto en la mini ventana */
+}
